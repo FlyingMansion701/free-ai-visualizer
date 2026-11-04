@@ -1,8 +1,8 @@
 # ai-visualizer
 
-> **Never used Claude Code?** Start at [jaredrhod.com](https://jaredrhod.com): pick your situation and it routes you to the right path.
+> **Never used OpenCode?** Start at [jaredrhod.com](https://jaredrhod.com): pick your situation and it routes you to the right path.
 
-**Runs on:** Python 3 and a browser; works with any AI. Pair it with backtalk (Claude Code) for the live show; demo mode works standalone.
+**Runs on:** Python 3 and a browser; works with any AI. Pair it with backtalk (OpenCode) for the live show; demo mode works standalone.
 
 The visualizer from my videos. Not a lookalike and not a prompt that asks your AI to build one: the actual living circuit board I run on stream, plus three more faces from my own rig, shipped as working code. Point it at your voice line and your agent gets a face that idles, listens, thinks, and speaks in sync with the real conversation.
 
@@ -31,9 +31,9 @@ cd ai-visualizer
 
 That starts the server and opens the default face (the board, unless you change `face` in the config). The gallery of all four faces stays at the root URL. Python 3 is the only requirement, and it ships with macOS and most Linux systems. On Windows, run `run.bat` (or `python server.py`) in this folder.
 
-**The easy way to configure it:** open this folder in Claude Code and say *"read ai-visualizer.md and set me up."* The wizard picks your face, your agent's name, and wires your voice line with you.
+**The easy way to configure it:** open this folder in OpenCode and say *"read ai-visualizer.md and set me up."* The wizard picks your face, your agent's name, and wires your voice line with you.
 
-**Already in a Claude Code session with your agent?** One sentence does the whole install: *"clone https://github.com/jaredrhod/ai-visualizer.git, then read ai-visualizer/ai-visualizer.md and set me up."* Your agent clones it, runs the wizard, and wires it in for you.
+**Already in an OpenCode session with your agent?** One sentence does the whole install: *"clone https://github.com/jaredrhod/ai-visualizer.git, then read ai-visualizer/ai-visualizer.md and set me up."* Your agent clones it, runs the wizard, and wires it in for you.
 
 **The manual way:** copy `ai-visualizer.json.example` to `ai-visualizer.json` (your copy is untracked, so updates never touch it), then edit it. Set `name` to your agent's name (it goes on the chip and in every HUD), and `face` to the one the root URL should open.
 

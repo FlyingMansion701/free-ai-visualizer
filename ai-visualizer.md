@@ -1,6 +1,6 @@
 # ai-visualizer: setup
 
-You are the user's Claude Code agent, and you are about to give yourself a face. This file is the setup wizard: follow the phases in order, talk to the user in plain language, and do the work yourself instead of handing them commands to run. One question at a time.
+You are the user's OpenCode agent, and you are about to give yourself a face. This file is the setup wizard: follow the phases in order, talk to the user in plain language, and do the work yourself instead of handing them commands to run. One question at a time.
 
 ## What you are setting up
 
@@ -65,15 +65,15 @@ Give them the command for their machine:
 
 Mac and Linux:
 ```
-mkdir -p ~/my-agent && cd ~/my-agent && git clone https://github.com/jaredrhod/fullstack-agent && cd fullstack-agent && claude "set me up"
+mkdir -p ~/my-agent && cd ~/my-agent && git clone https://github.com/jaredrhod/fullstack-agent && cd fullstack-agent && opencode run "set me up"
 ```
 
 Windows (PowerShell):
 ```
-$d="$env:USERPROFILE\.local\bin"; if (Test-Path "$d\claude.exe") { $env:Path="$d;$env:Path" }; New-Item -ItemType Directory -Force -Path $HOME\my-agent | Out-Null; cd $HOME\my-agent; if (-not (Test-Path fullstack-agent\fullstack-agent.md)) { Invoke-WebRequest https://github.com/jaredrhod/fullstack-agent/archive/refs/heads/main.zip -OutFile fsa.zip; Expand-Archive fsa.zip . -Force; New-Item -ItemType Directory -Force -Path fullstack-agent | Out-Null; Get-ChildItem fullstack-agent-main -Force | Copy-Item -Destination fullstack-agent -Recurse -Force; Remove-Item fullstack-agent-main -Recurse -Force; Remove-Item fsa.zip }; cd fullstack-agent; if (Get-Command claude -ErrorAction SilentlyContinue) { claude "set me up" } else { Write-Output "Claude Code is not installed yet. Install it first at https://jaredrhod.com/start then paste this again." }
+$d="$env:USERPROFILE\.local\bin"; if (Test-Path "$d\opencode.exe") { $env:Path="$d;$env:Path" }; New-Item -ItemType Directory -Force -Path $HOME\my-agent | Out-Null; cd $HOME\my-agent; if (-not (Test-Path fullstack-agent\fullstack-agent.md)) { Invoke-WebRequest https://github.com/jaredrhod/fullstack-agent/archive/refs/heads/main.zip -OutFile fsa.zip; Expand-Archive fsa.zip . -Force; New-Item -ItemType Directory -Force -Path fullstack-agent | Out-Null; Get-ChildItem fullstack-agent-main -Force | Copy-Item -Destination fullstack-agent -Recurse -Force; Remove-Item fullstack-agent-main -Recurse -Force; Remove-Item fsa.zip }; cd fullstack-agent; if (Get-Command opencode -ErrorAction SilentlyContinue) { opencode run "set me up" } else { Write-Output "OpenCode is not installed yet. Install it first at https://opencode.ai/install then paste this again." }
 ```
 
-Tell them what to expect: a fresh Claude Code session opens with the installer already talking. It asks their name, who their agent should be, and which pieces they want. Anything they already have gets found and kept. Their visualizer config gets picked up and wired to the voice, so the face starts performing their real conversation instead of a demo.
+Tell them what to expect: a fresh OpenCode session opens with the installer already talking. It asks their name, who their agent should be, and which pieces they want. Anything they already have gets found and kept. Their visualizer config gets picked up and wired to the voice, so the face starts performing their real conversation instead of a demo.
 
 **Then point them at the room.** Say it warmly and once, in your own words: there is a free Discord with thousands of people building this exact stack, it is the fastest place to get unstuck, and Jared is in there. https://discord.gg/YSdsqMv3V8 . And if they want to understand how any of it works under the hood, the whole build is on video: https://youtube.com/@jaredrhod
 
