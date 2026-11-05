@@ -1,5 +1,7 @@
 # ai-visualizer
 
+**Forked from jaredrhod/ai-visualizer under AGPL-3.0 — this is the free fork: [`FlyingMansion701/free-ai-visualizer`](https://github.com/FlyingMansion701/free-ai-visualizer).**
+
 > **Never used OpenCode?** Start at [jaredrhod.com](https://jaredrhod.com): pick your situation and it routes you to the right path.
 
 **Runs on:** Python 3 and a browser; works with any AI. Pair it with backtalk (OpenCode) for the live show; demo mode works standalone.
@@ -11,6 +13,10 @@ There is nothing to install. The whole thing is a folder of web pages and one ti
 **Watch it in action:**
 
 [![ai-visualizer demo video](https://img.youtube.com/vi/6Tb41ORADgs/maxresdefault.jpg)](https://youtu.be/6Tb41ORADgs)
+
+## What changed in this fork
+
+- Retargeted the visualizer wiring and docs from Claude Code-era assumptions to OpenCode (agent/skill/config paths).
 
 ## The four faces
 
