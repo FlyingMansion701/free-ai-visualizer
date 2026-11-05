@@ -2,6 +2,8 @@
 
 **Forked from jaredrhod/ai-visualizer under AGPL-3.0 — this is the free fork: [`FlyingMansion701/free-ai-visualizer`](https://github.com/FlyingMansion701/free-ai-visualizer).**
 
+**Original author:** Jared Rhodenizer — his Discord, his site ([jaredrhod.com](https://jaredrhod.com)), and his Ko-fi belong to the original project, not to this free fork; this fork is not endorsed by him.
+
 > **Never used OpenCode?** Start at [jaredrhod.com](https://jaredrhod.com): pick your situation and it routes you to the right path.
 
 **Runs on:** Python 3 and a browser; works with any AI. Pair it with backtalk (OpenCode) for the live show; demo mode works standalone.
