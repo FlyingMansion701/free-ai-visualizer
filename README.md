@@ -24,7 +24,7 @@ Every face speaks the same signal bus, so switching faces is just opening a diff
 ## Install
 
 ```
-git clone https://github.com/jaredrhod/ai-visualizer
+git clone https://github.com/FlyingMansion701/free-ai-visualizer
 cd ai-visualizer
 ./run.sh
 ```
@@ -33,7 +33,7 @@ That starts the server and opens the default face (the board, unless you change 
 
 **The easy way to configure it:** open this folder in OpenCode and say *"read ai-visualizer.md and set me up."* The wizard picks your face, your agent's name, and wires your voice line with you.
 
-**Already in an OpenCode session with your agent?** One sentence does the whole install: *"clone https://github.com/jaredrhod/ai-visualizer.git, then read ai-visualizer/ai-visualizer.md and set me up."* Your agent clones it, runs the wizard, and wires it in for you.
+**Already in an OpenCode session with your agent?** One sentence does the whole install: *"clone https://github.com/FlyingMansion701/free-ai-visualizer.git, then read ai-visualizer/ai-visualizer.md and set me up."* Your agent clones it, runs the wizard, and wires it in for you.
 
 **The manual way:** copy `ai-visualizer.json.example` to `ai-visualizer.json` (your copy is untracked, so updates never touch it), then edit it. Set `name` to your agent's name (it goes on the chip and in every HUD), and `face` to the one the root URL should open.
 
@@ -45,7 +45,7 @@ Or run the server itself in mock mode and every face rides the synthetic bus: `.
 
 ## Wire your voice
 
-The faces read three tiny files, the same signal-bus contract [backtalk](https://github.com/jaredrhod/backtalk) writes natively:
+The faces read three tiny files, the same signal-bus contract [backtalk](https://github.com/FlyingMansion701/free-backtalk) writes natively:
 
 ```
 .voice_state        idle | listening | thinking | speaking
@@ -88,7 +88,7 @@ The visualizer improves continuously, and new faces are planned. To update on ma
 
 A face is better with a voice behind it. The visualizer performs your real conversations only when a voice line is wired in, and the agent doing the talking is only as good as the memory behind it.
 
-- **The whole stack, one command.** [fullstack-agent](https://github.com/jaredrhod/fullstack-agent) installs the memory, the voice, the face, and the hands, and wires them together for you. Pick only the pieces you want: https://jaredrhod.com
+- **The whole stack, one command.** [fullstack-agent](https://github.com/FlyingMansion701/free-fullstack-agent) installs the memory, the voice, the face, and the hands, and wires them together for you. Pick only the pieces you want: https://jaredrhod.com
 - **The videos.** Free series on all of it: https://youtube.com/@jaredrhod
 - **The Discord.** Thousands of builders, and the fastest place to get unstuck: https://discord.gg/YSdsqMv3V8
 - **Everything else,** free and open: https://jaredrhod.com
